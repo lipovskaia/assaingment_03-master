@@ -7,11 +7,12 @@ Why pay a fortune teller when you can just program your fortune yourself? Write 
 
 function tellFortune(job, location, partner, children){
    
-   var future = "You will be a " + job + " in " + location + " , and married to " + partner + " with " + children + " children .";
+   var future = "You will be a " + job + " in " + location + " , and married to " + partner + " with " + children + " children ." + "<br>";
        document.write(future);
     
      }
 tellFortune("Bear Tamer",  "Russia", "Masha", "7" );
+
 tellFortune("Prophet of Mormons", "Utah" , "Noccolet, Nadine and Silvia ", "25" );
-tellFortune("President of the US", " The Wite House", "Malania", "3" );
+tellFortune("President of the US", " The White House", "Milania", "3");
 

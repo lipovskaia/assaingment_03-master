@@ -1,3 +1,4 @@
+/* eslint-env browser*/
 /* The Rock, Paper, Scissors Game (20 points)
 Rock, paper, scissors is a classic 2 player game. Each player chooses rock, paper or scissors. The possible outcomes include:
 •	Rock destroys scissors.
@@ -17,23 +18,35 @@ In this lab you will be responsible for figuring out some of the logic. These ne
 */ 
 var player = window.prompt( "Please shoose : Rock or Paper or Scissors ");
 var computer = Math.floor((Math.random()*3) +1);
-function sissorsGame(){
+function scissorsGame(){
     
     
-    if (payer == rock && computer == 1){
-        document.write("It's a tie");
-    } if (payer == rock && computer == 2) {
-        document.write(" " + player + " is lost to paper");
-    }if (player == rock && computer == 3 ){
-        document.write(" " + player + " is won over sissors");
-    } if (player == paper && computer == 1 ){
-        document.write(" " + player + " is won over rock");
-    }if (player == paper && computer == 2 ){
-        document.write("It's a tie");
-    }if (player == paper && computer == 3 ){
-        document.write(" " + player + " is lost to sissors ");
-    }else{
+    if (player == "rock" && computer == 1){
+        window.alert("It's a tie");
+    } if (player == "rock" && computer == 2) {
+         window.alert(" " + player + " is lost to paper");
+    }if (player == "rock" && computer == 3 ){
+         window.alert(" " + player + " is won over scissors");
+    } if (player == "paper" && computer == 1 ){
+         window.alert(" " + player + " is won over rock");
+    }if (player == "paper" && computer == 2 ){
+         window.alert("It's a tie");
+    }if (player == "paper" && computer == 3 ){
+         window.alert(" " + player + " is lost to scissors ");
+    } if (player == "scissors" && computer == 1 ){
+         window.alert(" " + player + " is lost to rock ");
         
-    }
+    }if (player == "scissors" && computer == 2 ){
+         window.alert(" " + player + " is won over paper ");
         
+    } if (player == "scissors" && computer == 3 ){
+         window.alert("It's a tie");
+        
+    }  if ( player !== "rock" &&  player !== "paper" && player !== "scissors"){
+         window.alert("Please enter: Rock or Paper or Scissors ");
     }
+    
+
+    }
+
+scissorsGame();
